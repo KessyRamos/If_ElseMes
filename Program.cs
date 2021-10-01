@@ -6,7 +6,7 @@ namespace ComparacaoIfElseMes
     {
         static void Main(string[] args)
         {
-            int mes = 0;
+            int mes;
 
             Console.Write("Digite o mês desejado: ");
             mes = Convert.ToInt16(Console.ReadLine());
@@ -24,9 +24,17 @@ namespace ComparacaoIfElseMes
             {
                 Console.WriteLine("Este mês tem 31 dias");
             }
+             else if(mes == 4)
+            {
+                Console.WriteLine("Este mês tem 30 dias");
+            }
             else if(mes == 5)
             {
                 Console.WriteLine("Este mês tem 31 dias");
+            }
+            else if(mes == 6)
+            {
+                Console.WriteLine("Este mês tem 30 dias");
             }
             else if(mes == 7)
             {
@@ -36,32 +44,23 @@ namespace ComparacaoIfElseMes
             {
                 Console.WriteLine("Este mês tem 31 dias");
             }
+            else if(mes == 9)
+            {
+                Console.WriteLine("Este mês tem 30 dias");
+            }
             else if(mes == 10)
             {
                 Console.WriteLine("Este mês tem 31 dias");
+            }
+            else if(mes == 11)
+            {
+                Console.WriteLine("Este mês tem 30 dias");
             }
             else if(mes == 12)
             {
                 Console.WriteLine("Este mês tem 31 dias");
             }
-             else if(mes == 4)
-            {
-                Console.WriteLine("Este mês tem 30 dias");
-            }
-             else if(mes == 6)
-            {
-                Console.WriteLine("Este mês tem 30 dias");
-            }
-             else if(mes == 9)
-            {
-                Console.WriteLine("Este mês tem 30 dias");
-            }
-             else if(mes == 11)
-            {
-                Console.WriteLine("Este mês tem 30 dias");
-            }
-             Console.WriteLine("");
-
+            Console.WriteLine("");
         }
     }
-}
+} 
